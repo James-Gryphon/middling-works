@@ -1,0 +1,35 @@
+
+
+Header append X-Content-Type-Options "nosniff"
+Header append X-FRAME-OPTIONS "SAMEORIGIN"
+Header always set Strict-Transport-Security "max-age=300; includeSubDomains"
+Header set Referrer-Policy "strict-origin-when-cross-origin"
+Header set Content-Security-Policy "upgrade-insecure-requests; default-src 'self'; frame-ancestors 'none'; form-action 'self' https://secure.bmtmicro.com; object-src 'none';"
+Options -Indexes
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^gpress/(.*)$ index.php?a=gpress [R=301,NC,L]
+
+php_flag session.cookie_secure On
+php_flag session.cookie_httponly On
+php_flag session.use_strict_mode On
+php_value session.cookie_samesite "Strict"
+php_value session.sid_bits_per_character "6"
+php_value session.sid_length "32"
+php_value date.timezone 'America/Chicago'
+
+#----------------------------------------------------------------cp:ppd
+# Section managed by cPanel: Password Protected Directories     -cp:ppd
+# - Do not edit this section of the htaccess file!              -cp:ppd
+#----------------------------------------------------------------cp:ppd
+AuthType Basic
+AuthName "Protected 'kumquat.middlingworks.com'"
+AuthUserFile "/home/middling/.htpasswds/kumquat.middlingworks.com/passwd"
+Require valid-user
+#----------------------------------------------------------------cp:ppd
+# End section managed by cPanel: Password Protected Directories -cp:ppd
+#----------------------------------------------------------------cp:ppd
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# This domain inherits the “PHP” package.
+# php -- END cPanel-generated handler, do not edit
