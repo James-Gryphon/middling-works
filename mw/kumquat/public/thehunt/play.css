@@ -1,0 +1,97 @@
+@media (max-width: 1023px)
+{
+  .map_box {width: initial;}
+  .game_box {display: inline-block;}
+  .left_wing { display: inline-block;}
+  .right_wing {float: initial; display: inline-block;}
+  .info_box 
+  {
+    z-index: 1;
+    background: #ddd;
+    position: fixed;
+    bottom: 0;
+    width: 16em;
+    font-size: 60%;
+    height: 2.5em;
+    overflow: hidden;
+    left: 0em;
+    margin: 0px;
+  }
+  .info_box:focus-within
+  {
+    position: fixed;
+    bottom: 7em;
+    left: 10%;
+    width: 26em;
+    font-size: 100%;
+    height: 12em;
+    background: #ddd;
+    border: 2px solid #777;
+  }
+  .card_box, .move_box, .location_blurb, 
+  .order_box, .log_box, .roster_box 
+  {
+    position: fixed;
+  }
+  .card_box, .move_box, .location_blurb, .order_box {font-size: 87%; height: 1.7em; top: 0px;}
+  .card_box {left: 2.6em; width: fit-content; background: #ddd;}
+  .card_box form {display: none;}
+  .card_box:before {content: "Cards"; font-weight: bold;}
+  .card_box:focus-within{z-index: 1; top: 2em; height: fit-content; width: 16em; border: 2px solid #777; padding: 5px;}
+  .card_box:focus-within form {display: initial;}
+  
+  .move_box {position: fixed; left: 0; width: fit-content; background: #ddd;}
+  .move_box form {display: none;}
+  .move_box:before {content: "Move"; font-weight: bold;}
+  .move_box:focus-within{z-index: 1; left: 0%; height: fit-content; top: 2em; width: 12em; border: 2px solid #777; padding: 5px;}
+  .move_box:focus-within form {display: initial;}
+  .move_box:focus-within:before {text-align: left;}
+  
+  .order_box {border: 1px solid #777; position: fixed; left: 5.45em; width: fit-content; background: #ddd;}
+  .order_box form {display: none;}
+  .order_box:before {content: "Special"; font-weight: bold;}
+  .order_box:focus-within{z-index: 1; top: 2em; width: 10em; height: fit-content; border: 2px solid #777; padding: 5px;}
+  .order_box:focus-within form {display: initial;}
+  .order_box .button_box {display: block;}
+  
+  .log_box {border: 1px solid #777; position: fixed; height: 1.5em; bottom: 0px; left: 16.6em; width: fit-content; background: #ddd;}
+  .log_box > * {display: none;}
+  .log_box:before {content: "Log"; font-size: 85%; line-height: 100%; font-weight: bold;}
+  .log_box:focus-within:before {display: none;}
+  .log_box:focus-within > * {display: initial;}
+  .log_box:focus-within{z-index: 1; left: 12.5%; bottom: 2rem; width: 24em; height: fit-content; border: 2px solid #777; padding: 5px;}
+  .log_box:focus-within:before {float: right;}
+  .log_box:focus-within .move_log {font-size: 100%; width: 95%;}
+  
+  .roster_box {border: 1px solid #777; position: fixed; width: fit-content; background: #ddd;}
+  .roster_box > * {display: none;}
+  .roster_box:focus-within{z-index: 1; width: 13em; border: 2px solid #777; padding: 5px;}
+  #clues {bottom: 0px; left: 9.6em; height: 1.5em; width: 3em; overflow: hidden;}
+  #clues:before {content: "Clues"; font-size: 85%; line-height: 100%; font-weight: bold;}
+  #clues:focus-within {height: fit-content; min-width: 11em; width: auto; max-width: 22em; overflow: initial; font-size: 100%;
+  left: 12.5%; bottom: 2rem;}
+  #clues:focus-within > * {display: initial;}
+  #clues:focus-within:before {display: none;}
+  #players {bottom: 0; left: 12.6em; height: 1.5em; width: 4em; overflow: hidden;}
+  #players > * {display: none;}
+  #players:before {content: "Players"; font-size: 85%; line-height: 100%; font-weight: bold;}
+  #players:focus-within {height: fit-content; min-width: 11em; width: auto; max-width: 22em; overflow: initial; font-size: 100%; 
+    left: 12.5%; bottom: 2rem;}
+  #players:focus-within > * {display: initial;}
+  #players:focus-within:before {display: none;}
+  
+  .location_blurb {border: 1px solid #777; position: fixed; top: 0em;    width: fit-content; background: #ddd;left: 8.7em;}
+  .location_blurb div {display: none;}
+  .location_blurb:before {content: "Blurbs"; font-weight: bold;}
+  .location_blurb:focus-within{z-index: 1; left: 5%; top: 2.2em; border: 2px solid #777; padding: 5px; height: fit-content;}
+  .location_blurb:focus-within:before {display: none;}
+  .location_blurb:focus-within div {display: block;}
+  .location_blurb:focus-within {font-size: 90%; width: 24em;}
+  .orders_box { border: none;}
+  .orders_box #turns_left {position: fixed; top: 0em; left: 14em; font-weight: bold; font-size: 75%;}
+  .left_wing {width: initial;height: 608px;position: absolute;top: 0;left: 0;}
+  .right_wing {width: initial; margin: 0;position: absolute; left: 0; top: 0; height: 22rem;}
+  .title_header {display: none;}
+  .map_box {margin-top: 1.5em;}
+  footer { position: absolute; top: 120%; height: 8em; width: 100%;}
+}

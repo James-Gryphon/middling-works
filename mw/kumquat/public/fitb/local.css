@@ -1,0 +1,41 @@
+.error {font-weight: bold; font-size: 90%; color: #990000; color: #900;}
+.congrats {color: #009900; color: #070;}
+.sorry {color: #999; color: #555;}
+.puz_box {padding: 0.3rem; border: 1px dotted #999; border-color: #555; background: #ddb; font-size: 140%; text-align: left;}
+.puz_box.won {font-size: 100%;}
+.fitb_box_label {font-family: monospace; padding: 0.2rem;margin: 0.1rem;}
+.fitb_box:disabled ~ .fitb_box_label {text-decoration-line: line-through; color: #777;}
+.fitb_box:not(:disabled) + .fitb_box_label:hover {color: red;}
+.fitb_box:checked + .fitb_box_label {font-weight: bold;}
+.fitb_box {display: none;}
+#fitb_submit {font-size: 140%;}
+#fitb_outer_container {display: inline-block; height: 3rem; font-size: 1.5rem;}
+#guess {height: 3.5rem; font-size: 1.6rem; width: 17em;}
+#fitb_outer_container input[type="checkbox"] {display: block; margin-left: 0px;}
+#fitb_outer_container input[type="checkbox"] { width: 100%; text-align: center; line-height: 1.3rem; border-width: 2px; border-style: outset; background: #999;}
+#fitb_outer_container input[type="checkbox"]:checked {background: #8a4; border-style: inset;}
+#fitb_outer_container input[type="checkbox"]:before {color: #555;}
+#fitb_outer_container input[type="checkbox"]:before {content: "-"; position: relative; font-size: 0.7em; top: -0.7em; font-weight: bold; color: #333;}
+#fitb_outer_container input[type="checkbox"]:disabled {background: #aaa;}
+#fitb_outer_container input[type="checkbox"]:disabled:before {content: "";}
+#fitb_outer_container input[type="checkbox"]:checked:before {visibility: hidden;}
+#fitb_outer_container input[type="checkbox"]:after {content: "✓"; position: relative; font-size: 0.7em; left: -0.4em; top: -0.7em; font-weight: bold; color: #050;}
+#fitb_outer_container input[type="checkbox"]:after {color: #360;}
+#fitb_outer_container input[type="checkbox"]:not(:disabled):active {border-style: inset; background: #996;}
+
+#fitb_inner_container {border: 1px solid #000; display: inline-block;}
+.fitb_row {display: block;}
+.fitb_cell {display: inline-block; font-size: 1.6em; margin: 0.2rem;}
+#solve:not(:checked) ~#guess {display: none;}
+#solve:checked ~#fitb_inner_container{display: none;}
+
+@media (max-width: 1023px) {#fitb_outer_container input[type="checkbox"]:after {top: -0.6em;}}
+@media (max-width: 1023px)
+{
+  .fitb_cell {font-size: 5.6vw; margin: 0.1vw; padding: 1.2vw;}
+  #guess {height: 5.0rem; font-size: 5.6vw; width: 75vw;}
+}
+@media(max-width: 391px)
+{
+  .fitb_cell {padding: 0.1vw;}
+}

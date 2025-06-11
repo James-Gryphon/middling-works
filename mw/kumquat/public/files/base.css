@@ -1,0 +1,105 @@
+* { box-sizing: border-box;}
+html {font-size: 1.2em; line-height: 150%; }
+body {margin: 0px;}
+select {font-size: 1rem;}
+body, ser {font-family: "Times", "Times New Roman", "Tinos", "Nimbus Roman", "Liberation Serif", serif;}
+sans {font-family: "Helvetica", "Arial", "Arimo", "Nimbus Sans", "Liberation Sans", sans-serif; font-size: 1.04rem;}
+mono {font-family: "Menlo", "Consolas", "Roboto Mono", monospace; font-size: 0.75rem;}
+writ {font-family: "Comic Sans MS", cursive; font-size: 0.98rem;}
+s {text-decoration: line-through;}	
+u {text-decoration: underline;}	
+.z1 {font-size: 60%;} .z2 {font-size: 70%;} .z3 {font-size: 80%; } .z4 {font-size: 100%;}	
+.z5 {font-size: 110%;} .z6 {font-size: 120%;} .z7 {font-size: 140%;} .z8 {font-size: 160%;} .z9 {font-size: 180%;}
+.z1, .z2, .z3, .z4, .z5, .z6, .z7, .z8, .z9 {line-height: 150%;}
+h1, h2, h3, h4, h5, h6 {margin: 0px;}
+.hidden {display: none;}
+.h_button.active{font-style: italic;}
+.h_button {padding: 0px 10px;line-height: 2.3em;}
+.h_button {font-size: 0.75em;font-family: "Tahoma", sans-serif;font-weight: bold;}
+
+header table, header vrttable {border: 0px;}
+header table td, header vrttable vrtd {padding: 0px;}
+.h_button {border: 2px outset #999; border-top: 0px; border-left: 0px;}
+
+.left, left {text-align: left;}
+.right, right {text-align: right;}
+.float_right {float: right;}
+.center_text, center, .center {text-align: center;}
+footer { padding: 5px; }
+table {border-width: 1px;border-style: solid;border-collapse: collapse;}
+th, td {border-width: 0.5px; border-style: solid; padding: 3px;}
+th {font-size: 90%; font-weight: bold;}
+/* Thanks to Boaz for recommendations about using table commands */
+.con_box {padding: 5px;}
+.last .con_box {font-size: 1.14rem; line-height: 1.5em;}
+.title_header {border-bottom: 1px solid; margin-bottom: 0.5em; }
+.title_header, .sort_box {font-size: 85%; font-weight: bold; padding: 2px;}
+.title_header h2, .title_header h3 {font-size: initial;}
+.sort_box {border-top: 2px solid #999;}
+span.active {font-style: italic; font-weight: bold;}
+.full_width {width: 100%;}
+.half_width {width: 55%;}
+.post_body {white-space: pre-wrap;}
+
+.skip {position: fixed; left: -9999px;}
+.skip:focus {display: initial; position: relative; left: 0; border: 1px solid #999;}
+hr {border: 1px inset #eee;}
+hr:last-child {border: 0px; margin: 0.25rem;}
+
+.closebox { display: none; position: fixed; width: 100%; height: 2rem; background: #bbc; border: 0px solid #444; z-index: 2;}
+.closebox:after {content: "(close)"; position: relative; top: -0em; left: 0.5rem; font-family: sans; font-weight: bold; font-size: 70%;}
+.closebox:active {background: #ccc linear-gradient(135deg, #ccc, #777);}
+.dpanc {position: fixed; bottom: 0%; height: 40%; width: 100%; background: #fff; border-top: 1px solid #000; overflow: scroll;}
+.dpanl {display: table-cell; border: 1px solid #999; width: 25%; height: 100%;}
+.dpancheck:checked + .dpanc { display: none;}
+.dpancheck {position: fixed; bottom: 40%; right: 0%;}
+.dpancheck:checked {bottom: 0%;}
+/* I know this makes things bulkier, but I hate invisible scrollbars... */
+*::-webkit-scrollbar 
+{
+    border: 0.5px solid #333; border-radius: 2px; width: 0.75rem;
+    background: #ddd linear-gradient(90deg, #ddd 0px 2px, #aaa 2px 4px, #ccc 4px 6px, #aaa 6px 8px, #ddd 8px 10px);
+}
+*::-webkit-scrollbar-thumb { border: 2px solid #777; background: #ddf; }
+*::-webkit-scrollbar-thumb:hover { background: #bbd;}
+*::-webkit-scrollbar-thumb:active { background: #66c; }
+
+.page_box.top {border-bottom: 1px solid #999;}
+.page_box.bottom {border-top: 1px solid #999;}
+.page_box input {width: 3.6rem;} 
+.page_box input[type="submit"] {width: 2.7rem;}
+.page_box form, .sort_box form {margin: 0px;}
+
+.linkbox {display: inline-block; vertical-align: top; width: 25%; max-width: 25%;text-align: center;padding-top: 5px;}
+.linkbox a span {position: relative; top: -7px;}
+.linkbox .z3 {position: relative; top: -6px;}
+.con_box +hr {margin-bottom: 0px;}
+
+@supports selector(:focus-within) 
+{
+    @media (max-width: 1023px)
+    {
+        /* An ugly hack to tide over mobile devices for a few days until I do something exhaustive.*/
+        /* (What do you know - 'a few days' turned into 'a few years' */
+        main center {text-align: left;}
+        header {background: #ddd; padding: 0.625rem; width: max-content; border: #555 solid 2px; border-width: 0px 0px 2px 2px; position: fixed; right: 0; z-index: 1;}
+        header:after {content: "≡";}
+        .h_button {display: none;}
+        header:focus-within .h_button {display: block;}
+        header:focus-within .h_button a {width: 100%;display: inline-block;}
+        header:focus-within table {position: fixed; top: 2rem; left: 0px; width: 100%;}
+        header:focus-within ~ .closebox {display: initial; top: 0; left: 0;}
+    }
+    @media (max-width: 827px)
+    {
+        .linkbox {display: block;}
+        .linkbox {padding: 0.3rem; }
+        .linkbox {width: initial; max-width: initial;}
+    }
+}
+
+.title_header {vertical-align: top;}
+.main_box_content {display: none;}
+.box_checker:checked + .title_header {border-style: inset;}
+#first_box_checker:checked ~ .main_box_content.first, #second_box_checker:checked ~ .main_box_content.second, #third_box_checker:checked ~ .main_box_content.third, #fourth_box_checker:checked ~ .main_box_content.fourth, .main_box_content.single {display: inline-block;}
+.main_box_content {border: 1px solid #000;}

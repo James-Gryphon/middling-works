@@ -1,0 +1,8 @@
+/* Taken from The Hunt*/
+.main_box_content table {width: 100%;}
+
+@media (max-width: 1023px)
+{
+    .main_box .title_header {text-wrap: nowrap;}
+    .main_box.third .title_header {width: 12em;}
+}

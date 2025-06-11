@@ -1,0 +1,88 @@
+#solution_form input {font-size: 140%;}
+.fraction {display: inline-block; text-align: center; vertical-align: middle;}
+.fraction hr {border: 1px solid #000;}
+/* map stuff */
+#math_map {width: 800px; height: 740px; background: #999; position: relative;}
+.site {position: absolute; font-size: 11pt; line-height: 18pt;}
+.box 
+{
+    border: 1px solid #333; 
+    display: inline-block; 
+    text-align: center;
+    width: 2.5em;
+    height: 2.5em;
+    margin-right: 0.25em; vertical-align: middle;
+}
+.box {background: #555; color: #fff; font-weight: bold; font-size: 0.75em; text-align: center;}
+.sound .box {background: #bcffbc; color: green;}
+.good .box {background: #B1ED00; color: darkgreen;}
+.middling .box {background: #c7c700; color: #440;}
+.weak .box {background: #aa5500; color: #fb0;}
+.site a {background: #fff8; border: 1px solid #777; border-radius: 4px; padding: 0.15em; font-size: 92.5%;}
+.box.sound + .site a {background: #ff0;}
+
+#q0_site {left: 381px; top: 0px; }
+#q1_site {left: 288px; top: 30px;}
+#q2_site {left: 591px; top: 83px;}
+#q3_site {left: 256px; top: 74px;}
+#q4_site {left: 318px; top: 121px;}
+#q5_site {left: 610px; top: 138px;}
+#q6_site {left: 376px; top: 182px;}
+#q7_site {left: 562px; top: 190px;}
+#q8_site {left: 174px; top: 141px;}
+#q9_site {left: 215px; top: 186px;}
+#q10_site {left: 101px; top: 199px;}
+#q11_site {left: 249px; top: 223px;}
+#q12_site {left: 127px; top: 264px;}
+#q13_site {left: 319px; top: 255px;}
+#q14_site {left: 232px; top: 286px;}
+#q15_site {left: 427px; top: 227px;}
+#q16_site {left: 621px; top: 223px;}
+#q17_site {left: 468px; top: 304px;}
+#q18_site {left: 131px; top: 335px;}
+#q19_site {left: 360px; top: 357px;}
+#q20_site {left: 35px; top: 294px;}
+#q21_site {left: 23px; top: 344px;}
+#q22_site {left: 258px; top: 383px;}
+#q23_site {left: 123px; top: 423px;}
+#q24_site {left: 251px; top: 468px;}
+#q25_site {left: 406px; top: 535px;}
+#q26_site {left: 333px; top: 411px;}
+#q27_site {left: 106px; top: 462px;}
+#q28_site {left: 260px; top: 515px;}
+#q29_site {left: 395px; top: 588px;}
+#q30_site {left: 364px; top: 448px;}
+#q31_site {left: 0px; top: 497px;}
+#q32_site {left: 279px; top: 587px;}
+#q33_site {left: 91px; top: 553px;}
+#q34_site {left: 82px; top: 379px;}
+#q35_site {left: 257px; top: 325px;}
+#q36_site {left: 468px; top: 359px;}
+#q37_site {left: 96px; top: 675px;}
+#q38_site {left: 130px; top: 595px;}
+#q39_site {left: 24px; top: 631px;}
+#q40_site {left: 535px; top: 479px;}
+#q41_site {left: 246px; top: 692px;}
+#q42_site {left: 660px; top: 499px;}
+#q43_site {left: 567px; top: 526px;}
+#q44_site {left: 585px; top: 569px;}
+#q45_site {left: 587px; top: 632px;}
+#q46_site {left: 569px; top: 336px;}
+
+.main_box_content.minor {width: 24em; }
+.main_box_content .box {width: 100%; height: 2rem; display: inline-block; vertical-align: baseline; font-size: 1rem;}
+.perf_eval .sound {font-style: normal; font-weight: bold; color: green;}
+.perf_eval .good {font-style: normal; color: darkgreen;}
+.perf_eval .middling{font-style: normal; color: #440;}
+.perf_eval .weak {font-style: italic; color: #fb0; background: #aa5500;}
+.last_q {outline: 1px solid #333; background: #ddd;} .last_q.site a {border: none; background: none; margin-left: -0.3em;} .last_q .box {border-width: 0px; border-right: 1px solid #000;}
+.last_q.sound {outline: 1px solid #090f; background: #bcffbcbb;}
+.last_q.good {outline: 1px solid #250f; background: #Bbf155bb;}
+.last_q.middling {outline: 1px solid #550f; background: #d7d770bb;}
+.last_q.weak {outline: 1px solid #330f; background: #ffcc88bb;}
+#stat_box {position: fixed; right: 4.5em; bottom: 0;}
+#stats_label {position: fixed; right: 0.1em; bottom: 0;}
+.stat_type {display: none;}
+#stat_box:checked ~ .site .stat_type {display: initial;}
+#stat_box:checked ~ .site .main_type {display: none;}
+.main_box_content.stats {height: 20em; overflow: scroll;}

@@ -1,0 +1,39 @@
+/* the css here isn't as bad as it used to be */
+/* thanks for people's pictures of terminals, and attempts at accurate amber color codes*/
+body {font-family: "monospace"; background: #000; color: #a50;}
+a, a:active, a:hover, a:visited {color: #a50;}
+table, th, td, .main_box, header, .title_header, .h_button, .local.h_button, hr {border-color: #a50; border-width: 0.5px;}
+a:focus, a:active, *::selection {background: #a50; color: #000;}
+*:focus, *:focus-visible {outline: 1px solid #a50; box-shadow: none; }
+input, select, button, textarea {background: #000; border: 2px double #a50; color: #a50;}
+/* thanks to mozilla for tips about radio buttons and checkboxes */
+input[type="radio"] {
+    appearance: none; border: none;
+}
+.h_button:focus-within {background: #a50;}
+input[type="radio"]::after {content: "◯"; font-weight: bold;}
+input[type="radio"]:checked::after {content: "⬤";}
+input[type="radio"]:focus {outline: 0px;}
+
+input[type="checkbox"] {
+    appearance: none;
+}
+input[type="checkbox"] {width: 1em; height: 1em; border-radius: 1px;}
+input[type="checkbox"]:checked {background: #a50}
+input[type="checkbox"]:after {content: "✓"; visibility: hidden; position: relative; font-size: 0.7em; top: -0.25em; left: 0.15em; font-weight: bold; color: #000;}
+input[type="checkbox"]:checked:after {visibility: initial; }
+
+.first .con_box.compress {width: 61%;}
+
+*::-webkit-scrollbar {
+    border: 0.5px solid #a50; border-radius: 2px; width: 12px;
+    background: #000 linear-gradient(90deg, #000 0px 2px, #a50 2px 4px, #000 4px 6px, #a50 6px 8px, #000 8px 10px);
+}
+*::-webkit-scrollbar-thumb { border: 2px dotted #000; background: #a50; }
+*::-webkit-scrollbar-thumb:hover { border: 2px dotted #000; background: #a50;}
+*::-webkit-scrollbar-thumb:active { border: 2px solid #000; background: #a50; }
+
+.page_box {background: #000;}
+.sort_box {background: #000;}
+.page_box, .page_box.bottom, .page_box.top {border-color: #a50; }
+.sort_box {border-color: #a50;}

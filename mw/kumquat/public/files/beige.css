@@ -1,0 +1,112 @@
+body {background: #bb9;}
+a {color: #000;}
+
+.h_button.active{color: #444;}
+/* hack for login; revisit this when needed */
+.h_button {background: #ddc linear-gradient(165deg, #eed, #ccb); }
+.h_button:hover {background: #ccb linear-gradient(165deg, #ddc, #bba);}
+.h_button:active {background: #bba linear-gradient(165deg, #ccb, #aa9); border-style: inset;}
+
+.h_button.program, .h_button.program:hover, .h_button.program:active {background: #aad;}
+
+.local.h_button {background: #cca linear-gradient(165deg, #ddb, #bb9);}
+.local.h_button:hover {background: #bb9 linear-gradient(165deg, #cca, #aa9);}
+.local.h_button:active {background: #aa8 linear-gradient(165deg, #bba, #998);}
+.local.h_button.active, .local.h_button.active:hover, .local.h_button.active:active {background: #bb9;}
+
+table {border-color: #775;}
+th, td {border-color: #775;}
+/* Thanks to Boaz for recommendations about using table commands */
+.title_header {background: #b4b499; border-bottom-color: #775; display: inline-block;}
+.title_header {text-align: center; top: 0em; min-width: 5em; border: 2px outset #999; height: 2.5em; line-height: 1.8em;margin-right: 1em;margin-top: 0.5em;}
+span.active {color: #553;}
+.main_box_content {background: #b4b499;}
+.main_box .title_header {background: #b4b499;}
+.skip:focus {border-color: #775; background: #cce;}
+hr {border-color: #ddb;}
+
+/* thanks to mdn again */
+
+/* Radios and checkboxes */
+input[type="radio"] {
+    appearance: none;
+}
+input[type="radio"] {width: 1em; height: 1em; background: #fff linear-gradient(135deg, #eec, #997); border: 2px solid #442; border-radius: 10px;}
+input[type="radio"]:checked {background: #333 radial-gradient(#000 10%,#eec);}
+input[type="radio"]:disabled {background: #ccc; border-color: #775;}
+
+input[type="checkbox"] {
+    appearance: none;
+}
+input[type="checkbox"] {border-radius: 2px; width: 1rem; height: 1rem; background: #eec linear-gradient(135deg, #eec, #997); border: 1px solid #442;}
+input[type="checkbox"]:checked {background: #8e8 linear-gradient(135deg, #cec,#9e9);}
+input[type="checkbox"]:after {content: "✓"; visibility: hidden; position: relative; font-size: 1.2em; top: -0.3em; left: 0.15em; font-weight: bold; color: #050;}
+input[type="checkbox"]:checked:after {visibility: initial; }
+input[type="checkbox"]:disabled {background: #ccb; border-color: #775;}
+
+/* End radios and checkboxes */
+
+/* Generic text appearance */
+textarea, input, select {background: #ddb; border: 2px solid #775; border-radius: 0px;}
+
+/* Special button handling, et al. */
+input[type="button"], input[type="submit"], input[type="reset"], input[type="color"], button {background: #d9d9c7 linear-gradient(155deg, #eec, #bb9); border: 2px outset #775; border-radius: 2px;}
+select {border: 2px inset #776;border-radius: 2px;}
+input[type="button"]:active, input[type="submit"]:active, input[type="reset"]:active, input[type="color"]:active, button:active {background: #000 linear-gradient(135deg, #cca, #997); border: 2px inset #775; color: #000;}
+
+.error_wrap {outline: 2px solid #900;}
+.notice_text.red {color: #900;}
+/* A bit of an ugly hack here; hopefully it will be replaced later */
+.notice_text.yellow {color: #550;}
+.notice_text.green{color: #070;}
+.notice_text {color: #550;}
+.success_text {color: #070;}
+
+:root {
+    /* colors in order - whites-black, green,  */
+    --body-4:#fff;
+    --body-35: #ddd;
+    --body-3:#999;
+    --body-2:#555;
+    --body-1:#000;
+        
+    --green-4:#9f9;
+    --green-3:#0C0;
+    --green-2:#070;
+    --green-1:#040;
+    
+    --red-4:#f99;
+    --red-3:#f00;
+    --red-2:#900;
+    --red-1:#400;
+    
+    --blue-4:#aaf;
+    --blue-3:#77d;
+    --blue-2:#00C;
+    --blue-1:#007;
+    
+    --yellow-4: #ff9;
+    --yellow-3: #dd6;
+    --yellow-2: #990;
+    --yellow-1: #550;
+    
+    --orange-4: #fc8;
+    --orange-3: #f90;
+    --orange-2: #d50;
+    --orange-1: #730;
+    
+    --indigo-4: #6ff;
+    --indigo-3: #0cc;
+    --indigo-2: #088;
+    --indigo-1: #055;
+    
+    --violet-4: #f9f;
+    --violet-3: #f0f;
+    --violet-2: #b0b;
+    --violet-1: #707;
+    }
+
+    .sort_box {background: #bb7;border-top-color: #775;}
+    .page_box {background: #d7d7a7;}
+
+    .main_box_content {background: #cca;}   

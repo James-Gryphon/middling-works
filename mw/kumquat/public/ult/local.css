@@ -1,0 +1,57 @@
+.move_box span {border: 1px solid #999; text-align: center; width: 50%; display: inline-block;}
+.right_wing {width: 32em;}
+.left_wing, .right_wing {float: left;}
+.right_wing {text-align: center; width: 552px}
+.equal {width: 33%;}
+.equal_half {width: 50%;}
+.time_block, .their_time {display: inline-block;}
+.mod_times {width: 3.6em;}
+.ult table { border: 1px outset #000; border-collapse: collapse; background: #e5e5e5;}
+.ult td {border: 1px solid #000; width: 48px; height: 48px; margin: 0px; text-align: center; font-family: "Comic Sans MS", sans}
+.ult td:nth-of-type(3n){border-right: 4px solid #999;}
+.ult tr:nth-of-type(3n){border-bottom: 4px solid #999;}
+.ult td:nth-of-type(9){border-right: 1px solid #000;}
+.ult tr:nth-of-type(9){border-bottom: 1px outset #000;}
+.valid {background: #fff;}
+.greenv {background: #fff;}
+.yellowv {background: #fec;}
+.bluev {background: #bdf;}
+.redv {background: #fdd;}
+.freeMove {background: #059; color: white;}
+.bluep {color: #005; background: #9bd; font-weight: bold; font-size: 1.5em;}
+.yellowp {color: #730; background: #fd9; font-weight: bold; font-size: 1.5em;}
+.greenp {color: #050; background: #cfc; font-weight: bold; font-size: 1.5em;}
+.redp {color: #700; background: #ebb; font-weight: bold; font-size: 1.5em;}
+.yellowv:hover{background: #9903;}
+.bluev:hover{background: #0093;}
+.greenv:hover{background: #ccc;}
+.redv:hover{background: #fdd;}
+.yelloww, .bluew, .redw, .greenw {color: #0007; font-style: italic;}
+.yelloww.yellowp, .bluew.bluep, .redw.redp, .greenw.greenp {font-style: normal;}
+.yelloww {background: #fd9; color: #730; color: #0007;}
+.bluew {background: #9bd; color: #005; color: #0007;}
+.redw {background: #ebb; color: #700; color: #0007;}
+.greenw {background: #cfc; color: #050; color: #0007; font-style: italic;}
+.greenw.greenp {color: #050;}
+.redw.redp {color: #700;}
+.bluew.bluep {color: #005;}
+.yelloww.yellowp {color: #730;}
+.lastMove.yellowp {background: radial-gradient(#fec, #f82);}
+.lastMove.bluep {background: radial-gradient(#9bd, #15d);}
+.lastMove.greenp {background: radial-gradient(#cfc, #5c5);}
+.lastMove.redp {background: radial-gradient(#ebb, #e44);}
+.host {background: #9bd; color: #005; font-weight: bold;}
+.guest {background: #fd9; color: #730; font-weight: bold;}
+.neutral {color: #777; font-weight: bold;}
+.border_adjust {border: 2px inset #ccc;}
+.resignbox {display: inline-block; background: #eaa; border: 1px solid #999; margin-right: 0.4em;}
+.drawbox{display: inline-block; background: #eea; border: 1px solid #999;}
+.move_box {height: 224px; overflow: scroll;text-align: left;vertical-align: top; padding: 0px;}
+.move_cell { border: 1px solid #aaa; display: inline-block; width: 275px; text-align: center; float: left;}
+#ult_mover input {font-size: 1.2em; margin: 3px;}
+#ult_mover input[type="text"] {font-size: 1.2em; width: 3em;}
+.resignbox > input, .drawbox > input {vertical-align: middle;}
+.host a {color: #005;}
+.guest a {color: #730;}
+.neutral a {color: #777;}
+#game_table {user-select: none;}

@@ -1,0 +1,7 @@
+.score_box {margin: 0.2rem 0rem;}
+.score_box span.score {padding: 4px; border: 1px solid #555; background: #ddb;}
+#gr {width: 48pt;}
+span.inliner form {display: inline;}
+#number {text-align: center;}
+input{font-size: 120%;}
+.main_box_content table {width: 100%;}

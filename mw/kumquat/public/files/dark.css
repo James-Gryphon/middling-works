@@ -1,0 +1,124 @@
+/* Color Section */
+body {color: #bbb; background: #000000;}
+a {color: #bbf;}
+a:visited {color: #c8c;}
+a:active {color: #f99;}
+
+header {background: #111; border-bottom-color: #aaa;}
+
+.h_button.active {color: #aaa;}
+
+.h_button {background: #111;border-right: 2px solid #aaa;}
+.h_button.program, .h_button.program:hover, .h_button.program:active {background: #1C1C70;}
+.h_button:hover {background: #222;}
+.h_button:active {background: #333;}
+
+.local.h_button {background: #000048; border-right: 2px solid #00007D;}
+.local.h_button:hover {background: #1B1B50;}
+.local.h_button:active {background: #303060;}
+.local.h_button.active, .local.h_button.active:hover, .local.h_button.active:active {background: #000061;}
+
+table, th, td, .main_box { border-color: #666;}
+.title_header {background-color: #111;}
+.main_box {background-color: #000020;}
+.main_box .title_header {background: #000048;}
+
+.skip:focus {border: 1px solid #666; background: #000048;}
+hr {border: 1px inset #aaa;}
+
+/* thanks to mdn again */
+
+/* Radios and checkboxes */
+input[type="radio"] {
+    appearance: none;
+}
+input[type="radio"] {width: 1em; height: 1em; background: #777 linear-gradient(135deg, #777, #000); border: 2px solid #555; border-radius: 10px;}
+input[type="radio"]:checked {background: #777;}
+input[type="radio"]:disabled {background: #333; border-color: #555;}
+
+input[type="checkbox"] {
+    appearance: none;
+}
+input[type="checkbox"] {width: 1em; height: 1em; background: #777 linear-gradient(135deg, #777, #000); border: 2px solid #777; border-radius: 1px;}
+input[type="checkbox"]:checked {background: #090 linear-gradient(135deg, #090,#000);}
+input[type="checkbox"]:after {content: "✓"; visibility: hidden; position: relative; font-size: 0.7em; top: -0.5em; left: 0.15em; font-weight: bold; color: #fff;}
+input[type="checkbox"]:checked:after {visibility: initial; }
+input[type="checkbox"]:disabled {background: #333; border-color: #555;}
+
+/* End radios and checkboxes */
+
+/* Generic text appearance */
+textarea, input, select {background: #333; border: 2px solid #555; border-radius: 0px; color: #aaa;}
+
+/* Special button handling, et al. */
+input[type="button"], input[type="submit"], input[type="reset"], input[type="color"], button {background: #444 linear-gradient(155deg, #444, #000); border: 2px outset #555; color: #aaa; border-radius: 2px;}
+select {border: 2px inset #555; border-radius: 2px;}
+input[type="button"]:active, input[type="submit"]:active, input[type="reset"]:active, input[type="color"]:active, button:active {background: #666 linear-gradient(155deg, #666, #000); border: 2px inset #555; color: #ccc;}
+input:focus-visible, textarea:focus-visible, select:focus-visible {outline: 1px solid #bbb;}
+
+.error_wrap {outline: 2px solid #f99;}
+.notice_text.red {color: #f99;}
+.notice_text.yellow {color: #ff9;}
+.notice_text.green {color: #9f9;}
+.success_text {color: #9f9;}
+
+/* Color "library" */
+:root {
+    /* colors in order - whites-black, green,  */
+    --body-1:#fff;
+    --body-2:#999;
+    --body-3:#555;
+    --body-35: #333;
+    --body-4:#000;
+        
+    --green-1:#9f9;
+    --green-2:#0C0;
+    --green-3:#070;
+    --green-4:#040;
+    
+    --red-1:#f99;
+    --red-2:#f00;
+    --red-3:#900;
+    --red-4:#400;
+    
+    --blue-1:#aaf;
+    --blue-2:#77d;
+    --blue-3:#00C;
+    --blue-4:#007;
+    
+    --yellow-1: #ff9;
+    --yellow-2: #dd6;
+    --yellow-3: #990;
+    --yellow-4: #550;
+    
+    --orange-1: #fc8;
+    --orange-2: #f90;
+    --orange-3: #d50;
+    --orange-4: #730;
+    
+    --indigo-1: #6ff;
+    --indigo-2: #0cc;
+    --indigo-3: #088;
+    --indigo-4: #055;
+    
+    --violet-1: #f9f;
+    --violet-2: #f0f;
+    --violet-3: #b0b;
+    --violet-4: #707;
+    }
+
+    *::-webkit-scrollbar {
+        border: 0.5px solid #999; border-radius: 2px; width: 12px;
+        background: #333 linear-gradient(90deg, #333 0px 2px, #777 2px 4px, #555 4px 6px, #777 6px 8px, #333 8px 10px);
+    }
+
+    *::-webkit-scrollbar-thumb { border: 2px solid #777; background: #99c; }
+    *::-webkit-scrollbar-thumb:hover { background: #aae;}
+    *::-webkit-scrollbar-thumb:active { background: #ccf; }
+
+.page_box {background: #006;}
+.sort_box {background: #000048;}
+
+@media (max-width: 1023px){
+    .main_box_content {background: #000020;}   
+}

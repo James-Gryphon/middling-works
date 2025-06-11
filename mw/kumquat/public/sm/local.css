@@ -1,0 +1,8 @@
+.message_box {height: 30em;overflow: auto;min-height: 22.1em;}
+.message_box .con_box {width: 100%;}
+
+@media (max-width: 681px)
+{
+input, textarea {font-size: 5vw;}
+textarea {width: 88vw;}
+}

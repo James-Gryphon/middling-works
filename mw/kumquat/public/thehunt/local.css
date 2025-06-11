@@ -1,0 +1,150 @@
+
+.page_box {background: #eee;}
+.page_box.top {border-bottom: 1px solid #999;}
+.page_box.bottom {border-top: 1px solid #999;}
+.page_box input {width: 4em;}
+.page_box input[type="submit"] {width: 3em;}
+.page_box form, .sort_box form {margin: 0px;}
+.sort_box {background: #cdf;}
+
+.thumbnail {max-width: 150px;}
+.thumbnail:hover {outline: 1px solid red;}
+.thumbnail:focus {outline: 1px solid green; max-width: 100%;}
+
+.game_box {text-align: left;}
+
+.card_box {left: 0; border-right: 1px solid #999;}
+
+/* Thanks to: https://stackoverflow.com/questions/3029422/how-do-i-auto-resize-an-image-to-fit-a-div-container */
+.map_box { width: 640px; height: 608px;}
+.map_box img {max-width: 100%; max-height: 100%;}
+.center_square {/* border: 2px solid #0d0; *//* width: 10px; *//* height: 10px; *//* top: 50%; *//* left: 50%; */position: relative;}
+
+.main_box.test {width: 99%;}
+.move_log {height: 12em;border: 1px solid #999;overflow: scroll;}
+
+.left_wing {width: 640px; float: left;}
+.right_wing {float: left; margin-left: 5px;}
+.info_box {border: 1px solid #555; padding: 5px; margin: 5px; margin-top: 0px;}
+.orders_box, .move_box, .card_box {border: 1px solid #999; display: inline-block;}
+.orders_box, .move_box, .card_box, .region_box, .territory_box {border: 1px solid #777;}
+.region_box, .territory_box {padding-left: 3px;margin-top: 5px;}
+
+.log_box, .roster_box {border: 1px solid #999; padding: 5px;}
+
+.orders_box, .region_box, .territory_box, .log_box, .roster_box {width: 22em;}
+.card_box {width: 60%;}
+.move_box {width: 40%;}
+.move_box select, .card_box select {height: 6em;}
+.move_box select, .move_box input, .card_box select, .card_box input {width: 100%;}
+footer.thehunt {background: #eef;border: 1px solid #999;font-size: 80%;/* position: relative; *//* height: 2.8em; */}
+.footer_table {width: 100%; border: 0px;} .footer_table td {border: none; text-align: center;}
+.footer_table td {width: 33%;}
+.footer_table .login {text-align: right;}
+.footer_table .login form {display: inline;}
+.footer_table .login form input {width: 11em;font-size: 90%;}
+.footer_table .login form input[type="submit"] {width: 4em;}
+.your_games table, .lobby_box table {width: 100%;}
+.your_games table td, .lobby_box table td {font-size: 80%;}
+.cbox {width: 14%; max-width: 14%;}
+.lbox {width: 42%; max-width: 42%;}
+
+.button_panel { background: #666; width: 100%; display: inline-block;}
+.button_box {display: inline-block;}
+.button_panel button {margin-right: 5px; border-width: 5px; border-style: outset; width: 100%; font-family: monospace; font-size: 0.9rem;}
+.button_panel button:active {border-style: inset;}
+.button_panel button:disabled {color: #0008; font-style: italic; border-style: solid;}
+.button_panel input[type="checkbox"] {width: 90%; text-align: center; line-height: 1.3em; border-width: 2px; border-style: outset; background: #999;}
+.button_panel input[type="checkbox"]:checked {background: #8a4; border-style: inset;}
+.button_panel input[type="checkbox"]:before {color: #555;}
+.button_panel input[type="checkbox"]:before {content: "-"; position: relative; font-size: 0.7em; top: -0.5em; left: 0.15em; font-weight: bold; color: #333;}
+.button_panel input[type="checkbox"]:disabled {background: #aaa;}
+.button_panel input[type="checkbox"]:disabled:before {content: "";}
+.button_panel input[type="checkbox"]:checked:before {visibility: hidden;}
+.button_panel input[type="checkbox"]:after {content: "✓"; position: relative; font-size: 0.7em; top: -0.5em; left: -0.25em; font-weight: bold; color: #050;}
+.button_panel input[type="checkbox"]:after {color: #360;}
+.button_panel input[type="checkbox"]:not(:disabled):active {border-style: inset; background: #996;}
+
+.button_panel button:disabled {border-style: solid;}
+.button_panel button {}
+
+button#capture 
+{
+  background: #030303 linear-gradient(155deg, #aaa, #555);
+  border-color: #777;
+}
+
+button#capture:active:not(:disabled)
+{
+  background: #030303 linear-gradient(155deg, #222, #555);
+  color: #fff; font-weight: bold; border-color: #777;
+}
+
+button#start
+{ 
+  background: #cfc linear-gradient(155deg, #df9, #8b8);
+  border-color: #7a6;
+}
+button#start:active:not(:disabled)
+{ 
+  background: #cfc linear-gradient(155deg, #8e4, #bfb); color: #040; font-weight: bold;
+}
+button#pass
+{ 
+  background: #ddd linear-gradient(155deg, #ddd, #aaa);
+  border-color: #999;
+}
+button#pass:active:not(:disabled)
+{ 
+  background: #ddd linear-gradient(155deg, #ccc, #eee); font-weight: bold; color: #333;
+}
+
+button#join
+{ 
+  background: #eec linear-gradient(155deg, #ffd, #aa7);
+  border-color: #aa7;
+}
+button#join:active:not(:disabled)
+{ 
+  background: #eec linear-gradient(155deg, #cc7, #ff9);
+    border-color: #aa7;
+  font-weight: bold;
+  color: #440;
+}
+
+button#leave
+{ 
+  background: #f99 linear-gradient(155deg, #fcc, #daa);
+  border-color: #a88;
+}
+button#leave:active:not(:disabled)
+{ 
+  background: #f99 linear-gradient(155deg, #faa, #fcc);
+  font-weight: bold;
+  color: #633;
+}
+
+.order_button {display: inline-block; border: 1px solid #999; border-width: 0px 0.5px;}
+#pass_box {background: #ccc;}
+#start_box {background: #bdb;}
+#join_box {background: #ddb;}
+#leave_box {background: #dbb;}
+#stop_box {background: #777;}
+.hidden {display: none;}
+
+/* Local colors - used in compliance with the SG CB standard */
+.fg_0 {color: #000000;} .bg_0 {background: #000000;} /* black */
+.fg_1 {color: #00003b;} .bg_1 {background: #00003b;} /* navy */
+.fg_2 {color: #003131;} .bg_2 {background: #003131;} /* teal */
+.fg_3 {color: #005100;} .bg_3 {background: #005100;} /* dark green */
+.fg_4 {color: #7f3f00;} .bg_4 {background: #7f3f00;} /* brown */
+.fg_5 {color: #c00000;} .bg_5 {background: #c00000;} /* red */
+.fg_6 {color: #ad00ad;} .bg_6 {background: #ad00ad;} /* purple */
+.fg_7 {color: #007df9;} .bg_7 {background: #007df9;} /* aqua */
+.fg_8 {color: #9b9b9b;} .bg_8 {background: #9b9b9b;} /* grey */
+.fg_9 {color: #00e271;} .bg_9 {background: #00e271;} /* foam green */
+.fg_10 {color: #7bf600;} .bg_10 {background: #7bf600;} /* chartreuse */
+.fg_11 {color: #e8d0ff;} .bg_11 {background: #e8d0ff;} /* lavenderesque */
+.fg_12 {color: #ffff99;} .bg_12 {background: #ffff99;} /* bright yellow */
+.fg_13 {color: #ffffff;} .bg_13 {background: #ffffff;} /* white */
+
