@@ -1,0 +1,11 @@
+.ttt {font-family: "Comic Sans MS", sans-serif; width: 160px; height: 160px; background: var(--body-4);}
+.ttt th {background: #ddd; background: var(--body-35); border: 1px solid #555; border-color: var(--body-2);}
+.ttt th {width: 20px;}
+.ttt .top th {height: 20px; width: 40px;}
+.ttt .top th#corner {height: 20px; width: 20px;}
+.ttt td {text-align: center; vertical-align: middle; width: 40px; height: 40px; }
+.ttt .x {color: var(--green-1); background: var(--green-4);}
+.ttt .x_threat {background: var(--green-3);}
+.ttt .o_threat {background: var(--red-3);}
+.ttt .o {color: var(--red-1); background: var(--red-4);}
+.ttt, .ttt tr, .ttt th, .ttt td {padding: 0px; margin: 0px;}
