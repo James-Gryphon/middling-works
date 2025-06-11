@@ -18,7 +18,7 @@ I like the MIT license myself. But I told one of my collaborators that he would 
 ### Are there any pictures?
 I'm afraid not. Archive.org isn't much help either, since it breaks the CSS files. I give you my personal guarantee, though, that when this was up on the site early June, 2025, not only did the vast majority of the site work, it even looked pretty spiffy (provided that you like solarized websites with a '90s/early '00s aesthetic). This repository isn't a bunch of stuff I never got close to completing - it's a lot of finished features, topped off with a couple of big ones that were nearly done.
 ### If it's so great why did you stop?
-Personal reasons.
+Personal reasons. (You can find some of them, but not the most important ones, if you look hard enough.)
 ### What's the code like?
 Pretty much like you would expect a paranoid, self-taught amateur's code to be like, I suppose. It's mostly procedural (Dice Games was my only real experiment with object orientation) and uses inconsistent styling (I preferred Allman, but earlier code was more K&R, and the formatting and indentation practices were inconsistently followed). It is probably better than it sounds, and not as good as it should be. 
 ### Does it have an installer?
