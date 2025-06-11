@@ -1,5 +1,5 @@
 # Introduction
-This is a complete archive of the files and settings needed to run the Middling Works development page, including its special features, as of June 8, 2025.
+This is a complete archive of the files and settings needed to run the Middling Works development page, including its special features, as of early June, 2025.
 I've decided to give up computer programming. My initial inclination was to burn my bridges, but after getting counsel, I've decided instead to release it all under a special license. I worked for a long time on all of this, and it would be a shame to see it, especially ULT and The Hunt go to waste. Maybe you can complete the job and succeed where I wasn't meant to. If you do, let me know. I'd love to see it.
 ## This release includes:
 1) An account registration system, with forgotten password reset, etc.
@@ -15,8 +15,16 @@ I've decided to give up computer programming. My initial inclination was to burn
 11) Early work towards setting up a subscription service option. This worked as far as restricting access to certain features, but there's no mechanism to actually automatically promote an account or to link it with a payment service. I didn't get to that part.
 ###  Why the (EVIL NON-FREE) license?
 I like the MIT license myself. But I told one of my collaborators that he would be a 'life member'. I may not benefit from this anymore myself, but I intend to make sure that if someone starts a subscription service that does the same things I had in mind, he'll keep that perk. If he tells me he doesn't want this, then we'll switch.
+### Are there any pictures?
+I'm afraid not. Archive.org isn't much help either, since it breaks the CSS files. I give you my personal guarantee, though, that when this was up on the site early June, 2025, not only did the vast majority of the site work, it even looked pretty spiffy (provided that you like solarized websites with a '90s/early '00s aesthetic). This repository isn't a bunch of stuff I never got close to completing - it's a lot of finished features, topped off with a couple of big ones that were nearly done.
+### If it's so great why did you stop?
+Here are a few reasons I'm comfortable disclosing.
+
+I've always felt insecure about my ability. It took a long time to focus enough to get this far. I never considered my skills to be professional-grade, and I knew I'd never be able to get a job coding at any business that I didn't actually start.
+
+Besides that, the nature of software-as-a-service is ongoing risk. I was hoping, by going into development as a sole proprietor, to have a more flexible schedule, and to be able to concentrate on other things besides my job. But it's since dawned on me that this is unrealistic. I would always be anxious about whether I missed something and the server was really vulnerable to being hacked. Now, to my knowledge, this never happened while the site was live, but that's unimpressive since it didn't get any real visitors who I didn't previously know. Now that I'm out, I'll never have to worry about something like that coming up, and being my fault, again.
 ### What's the code like?
-Pretty much like you would expect a paranoid, self-taught amateur's code to be like, I suppose. It's mostly procedural (Dice Games was my only real experiment with object orientation) and uses inconsistent styling (I preferred Allman, but earlier code was more K&R, and the formatting and indentation practices were inconsistently followed). It is probably better than it sounds, and not as good as it should be.
+Pretty much like you would expect a paranoid, self-taught amateur's code to be like, I suppose. It's mostly procedural (Dice Games was my only real experiment with object orientation) and uses inconsistent styling (I preferred Allman, but earlier code was more K&R, and the formatting and indentation practices were inconsistently followed). It is probably better than it sounds, and not as good as it should be. 
 ### Does it have an installer?
 Nope.
 You have to import the SQL tables, then go into the settings files and adjust the password/directories/etc. for your case, and then some other things, before you'll have a working implementation.
@@ -27,8 +35,6 @@ M*aaaay*be?
 I think you could do worse, following random basic guides. I took this problem seriously, looked all over for people's writings on this matter, and tried to lock things down as much as possible, in accordance with the best practices I saw. I once bought a gent's third-party solution, and was gratified to find that it offered very little in comparison to what I already had, so there's that.
 
 I'm not specifically aware of any direct vulnerabilities that allow malicious user input or output, or access to the internals of the system. There is a known weakness in the system that locks people out when they have too many attempts, but that doesn't allow malicious access, it just makes life hard for everybody. There are a few times that I use unprepared queries, but only when there is no user input involved, or it has been carefully filtered by the same means I used for front-end display.
-
-This question probably has a little to do with why I'm quitting, incidentally. I knew I would always be anxious about whether I missed something, and the server was really vulnerable to being hacked. To my knowledge, this never happened while the site was live, but that's not too impressive since it didn't get many visitors. Now that I'm out, I never have to worry about this being my fault again.
 
 The admin panel, and other similar tools scattered here and there, are insecure. With the site set up I had, though, it 1) was in a password-protected directory that the general public never knew about, and 2) depended on my IP for access. If you try to reproduce my setup (as opposed to doing it all on your local machine and only syncing when you have a release in mind), I recommend you try something at least as secure as that.
 ### What's the structure?
@@ -79,7 +85,6 @@ Thanks. I'm glad you agree with my big decision, even if not for all the same re
 ### I like the ideas, but this codebase isn't good enough for production.
 Well, use what you can and improve the rest. Or don't, and make software that does what I meant.
 
-I never considered myself to be a professional-grade programmer. (That's ironically part of why I tried to make this 'commercial' in the first place, because I thought I could make the concepts work, and I knew I'd never be able to get a job coding somewhere else.)
 ### I have questions about *x*.
 Well, write me about it at mw @ soopergrape.com. If it doesn't take too much time, and I remember what I was thinking, I may try to explain it. If it's frequent enough, your question may get added here.
 ### You need to fix *x*, because *y*/You need to accept my pull request.
