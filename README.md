@@ -18,11 +18,7 @@ I like the MIT license myself. But I told one of my collaborators that he would 
 ### Are there any pictures?
 I'm afraid not. Archive.org isn't much help either, since it breaks the CSS files. I give you my personal guarantee, though, that when this was up on the site early June, 2025, not only did the vast majority of the site work, it even looked pretty spiffy (provided that you like solarized websites with a '90s/early '00s aesthetic). This repository isn't a bunch of stuff I never got close to completing - it's a lot of finished features, topped off with a couple of big ones that were nearly done.
 ### If it's so great why did you stop?
-Here are a few reasons I'm comfortable disclosing.
-
-I've always felt insecure about my ability. It took a long time to focus enough to get this far. I never considered my skills to be professional-grade, and I knew I'd never be able to get a job coding at any business that I didn't actually start.
-
-Besides that, the nature of software-as-a-service is ongoing risk. I was hoping, by going into development as a sole proprietor, to have a more flexible schedule, and to be able to concentrate on other things besides my job. But it's since dawned on me that this is unrealistic. I would always be anxious about whether I missed something and the server was really vulnerable to being hacked. Now, to my knowledge, this never happened while the site was live, but that's unimpressive since it didn't get any real visitors who I didn't previously know. Now that I'm out, I'll never have to worry about something like that coming up, and being my fault, again.
+Personal reasons.
 ### What's the code like?
 Pretty much like you would expect a paranoid, self-taught amateur's code to be like, I suppose. It's mostly procedural (Dice Games was my only real experiment with object orientation) and uses inconsistent styling (I preferred Allman, but earlier code was more K&R, and the formatting and indentation practices were inconsistently followed). It is probably better than it sounds, and not as good as it should be. 
 ### Does it have an installer?
