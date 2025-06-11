@@ -13,8 +13,6 @@ I've decided to retire from computer programming. My initial inclination was to 
 9) Ultimate (ULT), the best ever (even in its current imperfect state) service for playing Ultimate Tic-Tac-Toe with a person.
 10) Mail, a forum-inspired private/group messaging service with a unique 'chapters' feature for organizing information in threads. I've seen a lot of forums, but I've never seen one with something like this.
 11) Early work towards setting up a subscription service option. This worked as far as restricting access to certain features, but there's no mechanism to actually automatically promote an account or to link it with a payment service. I didn't get to that part.
-###  Why the (EVIL NON-FREE) license?
-I like the MIT license myself. But I told one of my collaborators that he would be a 'life member'. I may not benefit from this anymore myself, but I intend to make sure that if someone starts a subscription service that does the same things I had in mind, he'll keep that perk. If he tells me he doesn't want this, then we'll switch.
 ### Are there any pictures?
 I'm afraid not. Archive.org isn't much help either, since it breaks the CSS files. I give you my personal guarantee, though, that when this was up on the site early June, 2025, not only did the vast majority of the site work, it even looked pretty spiffy (provided that you like solarized websites with a '90s/early '00s aesthetic). This repository isn't a bunch of stuff I never got close to completing - it's a lot of finished features, topped off with a couple of big ones that were nearly done.
 ### If it's so great why did you stop?
@@ -28,7 +26,7 @@ It is a leap for a beginner, but if you're not as good as, or better than, I was
 ### Is it secure?
 M*aaaay*be?
 
-I think you could do worse, following random basic guides. I took this problem seriously, looked all over for people's writings on this matter, and tried to lock things down as much as possible, in accordance with the best practices I saw. I once bought a gent's third-party solution, and was gratified to find that it offered very little in comparison to what I already had, so there's that.
+I think you could do worse, following random basic guides. I took this problem seriously, looked all over for people's writings on this matter, and tried to lock things down as much as possible, in accordance with the best practices I saw. I once bought a gent's third-party solution, and was gratified to find that it offered little in comparison to what I already had, so there's that.
 
 I'm not specifically aware of any direct vulnerabilities that allow malicious user input or output, or access to the internals of the system. There is a known weakness in the system that locks people out when they have too many attempts, but that doesn't allow malicious access, it just makes life hard for everybody. There are a few times that I use unprepared queries, but only when there is no user input involved, or it has been carefully filtered by the same means I used for front-end display.
 
@@ -65,9 +63,9 @@ Whoops.
 
 It's annoying if I did this, since I did a scan to see that I didn't leave anything like that in. But I don't think any of them are valid anymore, since the server setup I use for my personal site has changed.
 ### What didn't you finish?
-ULT was the main big feature that wasn't more or less ready for production (according to my standards), but it was working pretty well, enough for us to play some test matches. There might be some bugs when it comes to handling overtime/tiebreaks, since we didn't get around to testing that (recently). I recommend doing extensive testing.
+ULT was the main big feature that wasn't more or less ready for production (according to my standards), but it was working pretty well, enough for us to play some test matches. There might be some bugs when it comes to handling overtime/tiebreaks, since we didn't get around to testing that (recently). I recommend doing extensive testing to figure out what all is missing. The game archive is supposed to have an actual search feature. I hoped to get in an analysis board, which would look like the game board, but work more like the one at Chess.com (using the bot from uttt.ai).
 
-The subscription manager didn't get finished, as far as actually giving you a way to get your account access promoted. I intended to do this last. It would have worked with BMT Micro's servers for the purpose. In principle, I suppose you could use any MoR or payment processor you trust. If you decide you don't want subscription service (admirable, so long as you have the money and don't want to do this professionally), it shouldn't be hard to remove the things that need it from the code.
+The subscription manager didn't get finished, as far as actually giving you a way to get your account access promoted. I intended to do this last. It would have worked with BMT Micro's servers for the purpose. In principle, I suppose you could use any MoR or payment processor you trust. If you decide you don't want subscription service (admirable, so long as you have the money and don't want to do this professionally), it shouldn't be hard to remove the things that expect it from the code.
 
 The Hunt works, but it isn't great for mobile use. (A lot of things aren't, actually.) Also, the process of making new maps requires a lot of SQL editing. That's annoying but I never got around to doing anything more. You can at least use the map viewer tool to see whether things link up to each other.
 
