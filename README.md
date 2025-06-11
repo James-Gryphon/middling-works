@@ -1,6 +1,6 @@
 # Introduction
 This is a complete archive of the files and settings needed to run the Middling Works development page, including its special features, as of early June, 2025.
-I've decided to give up computer programming. My initial inclination was to burn my bridges, but after getting counsel, I've decided instead to release it all under a special license. I worked for a long time on all of this, and it would be a shame to see it, especially ULT and The Hunt go to waste. Maybe you can complete the job and succeed where I wasn't meant to. If you do, let me know. I'd love to see it.
+I've decided to retire from computer programming. My initial inclination was to discard the projects, but after getting counsel, I've decided to release it all under a special license. It would be a shame to see these features, especially ULT and The Hunt, go to waste. If you can complete the work, let me know. I'd love to see it.
 ## This release includes:
 1) An account registration system, with forgotten password reset, etc.
 2) A blog system for admin usage, meant to be placed in a secure directory and protected with IP address.
